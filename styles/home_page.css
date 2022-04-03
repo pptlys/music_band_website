@@ -40,18 +40,21 @@ header {
 #banner-content {
   width: 960px;
   margin: 0 auto;
+  display: block;
 }
 
 #banner-logo {
   width: 600px;
+  
 }
 
-#logo {
+header {
   background-image: url(/images/banner.png);
   background-repeat: no-repeat;
   background-color: #9e2c49;
   background-position: left top;
   overflow: hidden;
+  height: 140px;
 }
 
 #tag-line {
