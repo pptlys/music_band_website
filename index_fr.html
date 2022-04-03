@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-       <!--
+  <!--
       Web Development Final Assignment
       
       Landing Page
@@ -11,79 +11,93 @@
       Filename:   index.html
 
    -->
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music Band Website</title>
     <link rel="stylesheet" type="text/css" href="styles/home_page.css" />
-</head>
-<body>
+    <script src="/scripts/main.js" defer></script>
+  </head>
+  <body>
     <div id="container">
-        <header>
-            <div id="banner-content">
-                    <div id="logo">
-                        <a href="/"><img id="banner-logo" src="images/banner_logo.png" alt="Apple Hill Center Logo"/></a>
-                    </div>
-                    <div class="clear"></div>
-                    <div id="tag-line">
-                        Apple Hill exists to perform, teach, and broaden the appreciation of chamber music
-                    </div>
-                    <div class="clear"></div>
-            </div>
-            <nav id="nav-container">
-                <div id="tabs-container">
-                    <ul>
-                        <li>
-                            <a href="/" style="border-left: none ;"><img id="home-icon" src="images/icon-home.png" alt="Home" /></a>
-                        </li>
-                        <li>
-                            <a href="#">gallery</a>
-                        </li>
-                        <li>
-                            <a href="#">events</a>
-                        </li>
-                        <li>
-                            <a href="#">donations</a>
-                        </li>
-                        <li>
-                            <a href="#">about us</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-
-        <main>
-            <div id="content-container">
-                <!-- Copy you code here -->
-                <p>Title</p>
-                <p>Content</p>
-
-            </div>
-        </main>
-        <div class="clear"></div>
-
-        <footer>
-            <p id="copyright">Copyright © 2020-21 Apple Hill Center for Chamber Music | All rights reserved. </p>
+      <header>
+        <div id="banner-content">
+          <div id="logo">
+            <a href="/"
+              ><img
+                id="banner-logo"
+                src="images/banner_logo.png"
+                alt="Apple Hill Center Logo"
+            /></a>
+            <button id="lang-toggle">en/fr</button>
+          </div>
+          <div class="clear"></div>
+          <div id="tag-line">
+            Apple Hill existe pour jouer, enseigner et élargir l'appréciation de
+            musique de chambre
+          </div>
+          <div class="clear"></div>
+        </div>
+        <nav id="nav-container">
+          <div id="tabs-container">
             <ul>
-                <li>
-                    Mail: PO Box 217, Sullivan, NH 03445
-                </li>
-                <li>
-                    Location: 410 Apple Hill Rd, Nelson, NH 03457
-                </li>
-                <li>
-                    Phone: 603-847-3371
-                </li>
-                <li>
-                    Fax: 603-847-9734
-                </li>
+              <li>
+                <a href="/" style="border-left: none"
+                  ><img id="home-icon" src="images/icon-home.png" alt="Home"
+                /></a>
+              </li>
+              <li>
+                <a href="#">Galerie</a>
+              </li>
+              <li>
+                <a href="#">événements</a>
+              </li>
+              <li>
+                <a href="#">donations</a>
+              </li>
+              <li>
+                <a href="#">à propos de nous</a>
+              </li>
             </ul>
+          </div>
+        </nav>
+      </header>
 
-        </footer>
+      <main>
+        <div id="content-container">
+          <div id="rotate-banner">
+            <p>Title</p>
+            <p>Content</p>
+          </div>
+          <div class="clear"></div>
+          <div id="embed-video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/6Vlk8Nqz6OI"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </main>
+      <div class="clear"></div>
 
+      <footer>
+        <p id="copyright">
+          Copyright © 2020-21 Apple Hill Center for Chamber Music | All rights
+          reserved.
+        </p>
+        <ul>
+          <li>Mail: PO Box 217, Sullivan, NH 03445</li>
+          <li>Location: 410 Apple Hill Rd, Nelson, NH 03457</li>
+          <li>Phone: 603-847-3371</li>
+          <li>Fax: 603-847-9734</li>
+        </ul>
+      </footer>
     </div>
-    
-</body>
+  </body>
 </html>
