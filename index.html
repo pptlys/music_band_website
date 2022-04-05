@@ -19,7 +19,7 @@
     <link rel="stylesheet" type="text/css" href="styles/home_page.css" />
     <script src="/scripts/main.js" defer></script>
   </head>
-  <body>
+  <body onload="rotate_banner()">
     <div id="container">
       <header>
         <div id="banner-content">
@@ -69,14 +69,23 @@
       <main>
         <div id="content-container">
           <div id="rotate-banner">
-            <p>Title</p>
-            <p>Content</p>
+            <img id="rotate-img" />
+            <div id="caption-text"></div>
           </div>
           <div class="clear"></div>
-          <div id="embed-video">
+          <div id="video-container">
             <iframe
-              width="560"
-              height="315"
+              width="448"
+              height="252"
+              src="https://www.youtube.com/embed/SCLjedRb1Dc"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              width="448"
+              height="252"
               src="https://www.youtube.com/embed/6Vlk8Nqz6OI"
               title="YouTube video player"
               frameborder="0"
