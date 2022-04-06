@@ -1,0 +1,140 @@
+/* Header and text Styles */
+h1 {
+    color: #9e2c49;
+    margin: 20px;
+}
+
+#donation-text {
+    margin: 20px;
+    font-size: 0.9em;
+    float: right;
+    color: #999;
+    letter-spacing: 1px;
+}
+
+/* Form Layout Styles */
+fieldset {
+    margin: 10px;
+    border-color: #9e2c49;
+}
+
+#cardtype, 
+#digitaltype {
+    border: none;
+}
+
+legend {
+    border-radius: 4px;
+    background-color: #9e2c49;
+    color: white;
+    font-size: 0.9em;
+    padding: 10px;
+}
+
+/* Input and Label Styles */
+label {
+    display: block;
+    float: left;
+    clear: left;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 180px;
+    text-align: right;
+    color: #999;
+}
+
+form#donation input,
+form#donation select {
+    display: block;
+    float: left;
+}
+
+/* Radio Button Styles */
+input[type='radio'] {
+    width: auto;
+    float: none;
+    clear: none;
+    margin-right: 10px;
+}
+label.cardlabel,
+label.digitallabel {
+    display: inline-block;
+    float: none;
+    width: auto;
+}
+
+label.cardlabel img {
+    height: 32px;
+    width: auto;
+}
+
+label.digitallabel img {
+    height: 48px;
+}
+
+/* Button Styles */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    display: inline-block;
+    height: 40px;
+    padding: 0 40px;
+    margin: 10px;
+    color: #555;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+    color: #333;
+    border-color: #888;
+    outline: 0;
+}
+
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+    color: #999;
+    background-color: #9e2c49;
+    border-color: #9e2c49;
+}
+
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+    color: #FFF;
+    background-color: #2c9e81;
+    border-color: #2c9e81;
+}
