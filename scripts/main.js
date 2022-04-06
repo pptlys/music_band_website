@@ -43,7 +43,6 @@ let pause = false
 
 
 function lang_toggle(){
-    let lang_toggle = document.getElementById("lang-toggle")
     let current_lang = document.documentElement.lang
     
     if (current_lang === 'en') {
