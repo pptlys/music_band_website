@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+      Web Development Final Assignment
+      
+      Events Page
+
+      Author: Zishu Chen
+      Date:   April 7, 2022
+
+      Filename:   events_en.html
+
+   -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Band Website</title>
+    <link rel="stylesheet" type="text/css" href="../styles/home_page.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/events.css" />
+    <script src="../scripts/events.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div id="banner-content">
+              <div id="logo">
+                <a href="/"
+                  ><img
+                    id="banner-logo"
+                    src="../images/banner_logo.png"
+                    alt="Apple Hill Center Logo"
+                /></a>
+                <button id="lang-toggle" lang="fr" onclick="lang_toggle()">
+                  Français
+                </button>
+              </div>
+              <div class="clear"></div>
+              <div id="tag-line">
+                Apple Hill exists to perform, teach, and broaden the appreciation of
+                chamber music
+              </div>
+              <div class="clear"></div>
+            </div>
+            <nav id="nav-container">
+              <div id="tabs-container">
+                <ul>
+                  <li>
+                    <a href="/" style="border-left: none"
+                      ><img id="home-icon" src="../images/icon-home.png" alt="Home"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#">gallery</a>
+                  </li>
+                  <li>
+                    <a href="/pages/events_en.html">events</a>
+                  </li>
+                  <li>
+                    <a href="#">donations</a>
+                  </li>
+                  <li>
+                    <a href="#">about us</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+    
+
+        <main>
+            <div id="content-container">
+                <!-- Copy your code here -->
+
+                <h1>Upcoming Events - 2021/2022 Concert Season</h1>
+
+                <div id="events_div_main">
+                    <!-- first section -- not sure what this will be yet -->
+                    <!-- was supposed to be calendar, but not anymore -->
+                    <div id="section1">
+
+                        <div id="filters_list">
+                            <h2>Search by...</h2>
+
+                            <table>
+                                <tr>
+                                    <td>
+                                        <label for="series_filter">Concert series</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="new_filter_row">
+                                        <select id="series_filter">
+                                            <option selected value="All">-</option>
+                                            <option value="Valley Classics Concert Series">Valley Classics Concert
+                                                Series</option>
+                                            <option value="Tuesday Summer Concert Series">Tuesday Summer Concert Series
+                                            </option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="season_filter">Season</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="new_filter_row">
+                                        <select id="season_filter">
+                                            <option selected value="All">-</option>
+                                            <option value="Spring">Spring</option>
+                                            <option value="Summer">Summer</option>
+                                            <option value="Fall">Fall</option>
+                                            <option value="Winter">Winter</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="month_filter">Month</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="new_filter_row">
+                                        <select id="month_filter">
+                                            <option selected value="All">-</option>
+                                            <option value="January">January</option>
+                                            <option value="February">February</option>
+                                            <option value="March">March</option>
+                                            <option value="April">April</option>
+                                            <option value="May">May</option>
+                                            <option value="June">June</option>
+                                            <option value="July">July</option>
+                                            <option value="August">August</option>
+                                            <option value="September">September</option>option>
+                                            <option value="October">October</option>
+                                            <option value="November">November</option>
+                                            <option value="December">December</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div id="buttons_div">
+                                <button id="search_btn">Search</button>
+                                <input type="reset" id="reset_btn" />
+                            </div>
+
+                        </div>
+
+                        <br></br>
+                        <br></br>
+
+                        <div id="past_events_div">
+                            <p>
+                                To see our past events, you can go to the following links.
+                                <br></br>
+                                Check us out on social media
+                                <br></br>
+                                Concert archive available on Youtube
+                                <br></br>
+                                Can also check out the gallery
+                            </p>
+
+                        </div>
+
+
+
+
+                    </div>
+
+
+                    <!-- Second section -- upcoming events -->
+                    <div id="upcoming_events_list">
+                        <h2 id="upcoming_events_header">All upcoming events</h2>
+                        <p id="upcoming_events_text">Upcoming events text (if applicable)</p>
+                        <div class="events_item spring april">
+                            <div class="events_item_left center">
+                                <img class="events_item_img" src="/images/music_in_bass_hall.jpg"
+                                    alt="Music in Bass Hall" />
+                                <h3>Music in Bass Hall</h3>
+                            </div>
+                            <div class="events_item_middle center">
+                                <h4>Apple Hill String Quartet</h4>
+                                <p>Franz Schubert, <i>String Quartet in A minor</i></p>
+                                <p>Sato Matsui, <i>String Quartet</i></p>
+                                <p>Amy Beach, <i>Piano Quintet</i> with special guest Judith Gordon, piano</p>
+                            </div>
+                            <div class="events_item_right center">
+                                <p class="events_item_date">Friday April 29, 2022</p>
+                                <p class="events_item_time">7:30 pm - 9:30 pm</p>
+
+                                <div class="tooltip events_item_btn_container">
+                                    <button class="events_item_btn">Buy Tickets</button>
+                                    <span class="tooltiptext">
+                                        <h4 id="tt_concert1"><i>Only X days left!</i></h4>
+                                        <p><b>Ticket Prices:</b></p>
+                                        <p>General Admission: $30</p>
+                                        <p>Monadnock Center Member: $25</p>
+                                        <p>Student/Child: $10</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="events_item valley_classics spring may">
+                            <div class="events_item_left center">
+                                <img class="events_item_img" src="/images/valley_classics.jpg"
+                                    alt="Valley Classics" />
+                                <h3>Valley Classics</h3>
+                            </div>
+                            <div class="events_item_middle center">
+                                <h4>Apple Hill String Quartet</h4>
+                                <p>Franz Schubert, <i>String Quartet in A minor</i></p>
+                                <p>Sato Matsui, <i>String Quartet</i></p>
+                                <p>Amy Beach, <i>Piano Quintet</i> with special guest Judith Gordon, piano</p>
+                            </div>
+                            <div class="events_item_right center">
+                                <p class="events_item_date">Sunday May 1, 2022</p>
+                                <p class="events_item_time">3:00 p.m. - 5:00 p.m.</p>
+                                <div class="tooltip events_item_btn_container">
+                                    <button class="events_item_btn">Buy Tickets</button>
+                                    <span class="tooltiptext">
+                                        <h4 id="tt_concert2"><i>Only X days left!</i></h4>
+                                        <p><b>Ticket Prices:</b></p>
+                                        <p>General Admission: $35</p>
+                                        <p>Student/Child: $10</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="events_item tuesday_summer_concerts summer june">
+                            <div class="events_item_left center">
+                                <img class="events_item_img" src="/images/tuesday_summer_concerts.jpg"
+                                    alt="Tuesday Summer Concert Series" />
+                                <h3>Tuesday Summer Evenings with Apple Hill</h3>
+                            </div>
+                            <div class="events_item_middle center">
+                                <h4>Hirsch Pinkas Duo, Sally Pinkas and Evan Hirsch</h4>
+                                <p>Johann Christian Bach, <i>Sonata for Piano Four-hands Op. 18 No. 5 in A Major</i></p>
+                                <p>Johannes Brahms, <i>Sixteen Waltzes, Op. 39</i></p>
+                                <p>Igor Stravinsky, <i>Five Easy Pieces</i></p>
+                                <p>and a survey of 19th century French piano music</p>
+                            </div>
+                            <div class="events_item_right center">
+                                <p class="events_item_date">Tuesday June 28, 2022</p>
+                                <p class="events_item_time">7:30 pm - 9:30 pm</p>
+                                <div class="tooltip events_item_btn_container">
+                                    <button class="events_item_btn">Buy Tickets</button>
+                                    <span class="tooltiptext">
+                                        <h4 id="tt_concert3"><i>Only X days left!</i></h4>
+                                        <p><b>Ticket Prices:</b></p>
+                                        <p>General Admission: $15</p>
+                                        <p>Subscriber: $10</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="events_item tuesday_summer_concerts summer july">
+                            <div class="events_item_left center">
+                                <img class="events_item_img" src="/images/tuesday_summer_concerts.jpg"
+                                alt="Tuesday Summer Concert Series" />
+                                <h3>Tuesday Summer Evenings with Apple Hill</h3>
+                            </div>
+                            <div class="events_item_middle center">
+                                <h4>Kinan Azmeh, clarinet, and Layale Chaker, violin</h4>
+                                <p>Layale Chaker/Kinan Azmeh, <i>13 Improvised Miniatures</i></p>
+                                <p>Azmeh, <i>Improvisation</i></p>
+                                <p>Azmeh, <i>And we are all Optimistic</i></p>
+                                <p>Azmeh, <i>Walls and Towers</i></p>
+                            </div>
+                            <div class="events_item_right center">
+                                <p class="events_item_date">Tuesday July 5, 2022</p>
+                                <p class="events_item_time">7:30 pm - 9:30 pm</p>
+                                <div class="tooltip events_item_btn_container">
+                                    <button class="events_item_btn">Buy Tickets</button>
+                                    <span class="tooltiptext">
+                                        <h4 id="tt_concert4"><i>Only X days left!</i></h4>
+                                        <p><b>Ticket Prices:</b></p>
+                                        <p>General Admission: $15</p>
+                                        <p>Subscriber: $10</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="events_item tuesday_summer_concerts summer july">
+                            <div class="events_item_left center">
+                                <img class="events_item_img" src="/images/tuesday_summer_concerts.jpg"
+                                alt="Tuesday Summer Concert Series" />
+                                <h3>Tuesday Summer Evenings with Apple Hill</h3>
+                            </div>
+                            <div class="events_item_middle center">
+                                <h4>Salley Koo, violin, and Alexander Solomon, piano</h4>
+                                <p>Amy Beach, <i>Romance</i></p>
+                                <p>Claude Debussy, <i>Sonate pour Violin et Piano</i></p>
+                                <p>Caroline Mallonee, <i>Selections from String Tunes</i></p>
+                                <p>Béla Bartók, <i>First Rhapsody (Folk Dances)</i></p>
+                            </div>
+                            <div class="events_item_right center">
+                                <p class="events_item_date">Tuesday July 12, 2022</p>
+                                <p class="events_item_time">7:30 pm - 9:30 pm</p>
+                                <div class="tooltip events_item_btn_container">
+                                    <button class="events_item_btn">Buy Tickets</button>
+                                    <span class="tooltiptext">
+                                        <h4 id="tt_concert5"><i>Only X days left!</i></h4>
+                                        <p><b>Ticket Prices:</b></p>
+                                        <p>General Admission: $15</p>
+                                        <p>Subscriber: $10</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="events_item tuesday_summer_concerts summer july">
+                            <div class="events_item_left center">
+                                <img class="events_item_img" src="/images/tuesday_summer_concerts.jpg"
+                                alt="Tuesday Summer Concert Series" />
+                                <h3>Tuesday Summer Evenings with Apple Hill</h3>
+                            </div>
+                            <div class="events_item_middle center">
+                                <h4>Mikael Darmanie, piano</h4>
+                                <p>Alexander Scriabin, <i>Album Leaf Op. 45 No. 1</i></p>
+                                <p>Franz Schubert, <i>Impromptu in Gb Major Op. 90</i></p>
+                                <p>Béla Bartók, <i>Piano Sonata BB 88, SZ. 80</i></p>
+                                <p>Maurice Ravel, <i>Alborado del Gracioso from Miroirs</i></p>
+                            </div>
+                            <div class="events_item_right center">
+                                <p class="events_item_date">Tuesday July 26, 2022</p>
+                                <p class="events_item_time">7:30 pm - 9:30 pm</p>
+                                <div class="tooltip events_item_btn_container">
+                                    <button class="events_item_btn">Buy Tickets</button>
+                                    <span class="tooltiptext">
+                                        <h4 id="tt_concert6"><i>Only X days left!</i></h4>
+                                        <p><b>Ticket Prices:</b></p>
+                                        <p>General Admission: $15</p>
+                                        <p>Subscriber: $10</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="events_item tuesday_summer_concerts summer august">
+                            <div class="events_item_left center">
+                                <img class="events_item_img" src="/images/tuesday_summer_concerts.jpg"
+                                alt="Tuesday Summer Concert Series" />
+                                <h3>Tuesday Summer Evenings with Apple Hill</h3>
+                            </div>
+                            <div class="events_item_middle center">
+                                <h4>Jesse Holstein and Ealaín McMullin, violin</h4>
+                                <p>Georg Philipp Telemann, <i>Gulliver Suite for Two Violins</i></p>
+                                <p>Sergei Prokofiev, <i>Sonata for Two Violins in C Major, op. 56</i></p>
+                                <p>Béla Bartók, <i>Duos for Two Violins sz 98</i></p>
+                            </div>
+                            <div class="events_item_right center">
+                                <p class="events_item_date">Tuesday August 2, 2022</p>
+                                <p class="events_item_time">7:30 pm - 9:30 pm</p>
+                                <div class="tooltip events_item_btn_container">
+                                    <button class="events_item_btn">Buy Tickets</button>
+                                    <span class="tooltiptext">
+                                        <h4 id="tt_concert7"><i>Only X days left!</i></h4>
+                                        <p><b>Ticket Prices:</b></p>
+                                        <p>General Admission: $15</p>
+                                        <p>Subscriber: $10</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="events_item tuesday_summer_concerts summer august">
+                            <div class="events_item_left center">
+                                <img class="events_item_img" src="/images/tuesday_summer_concerts.jpg"
+                                alt="Tuesday Summer Concert Series" />
+                                <h3>Tuesday Summer Evenings with Apple Hill</h3>
+                            </div>
+                            <div class="events_item_middle center">
+                                <h4>Jesse MacDonald, violin</h4>
+                                <p>J. S. Bach, <i>Partita in b minor BWV 1002</i></p>
+                                <p>Joseph Achron, <i>Improvisation Op. 19, No. 1</i></p>
+                                <p>Eugene Ysaye, <i>Sonata No. 4 in e minor “Fritz Kreisler”</i></p>
+                                <p>Traditional (arr. Mark O’Connor), <i>Midnight on the Water/Bonaparte’s Retreat</i></p>
+                            </div>
+                            <div class="events_item_right center">
+                                <p class="events_item_date">Tuesday August 9, 2022</p>
+                                <p class="events_item_time">7:30 pm - 9:30 pm</p>
+                                <div class="tooltip events_item_btn_container">
+                                    <button class="events_item_btn">Buy Tickets</button>
+                                    <span class="tooltiptext">
+                                        <h4 id="tt_concert8"><i>Only X days left!</i></h4>
+                                        <p><b>Ticket Prices:</b></p>
+                                        <p>General Admission: $15</p>
+                                        <p>Subscriber: $10</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="events_item tuesday_summer_concerts summer august">
+                            <div class="events_item_left center">
+                                <img class="events_item_img" src="/images/tuesday_summer_concerts.jpg"
+                                alt="Tuesday Summer Concert Series" />
+                                <h3>Tuesday Summer Evenings with Apple Hill</h3>
+                            </div>
+                            <div class="events_item_middle center">
+                                <h4>Max Zeugner, bass, and Yi-heng Yang, piano</h4>
+                                <p>George Frideric Handel, <i>Sonata in D major, HWV 371</i></p>
+                                <p>Leslie Wildman, <i>Tubmans</i></p>
+                                <p>Leonard Bernstein, <i>Two Songs from West Side Story</i></p>
+                                <p>Girolami Frescobaldi, <i>Partite 14 sopra l'Aria della Romanesca</i></p>
+                            </div>
+                            <div class="events_item_right center">
+                                <p class="events_item_date">Tuesday August 23, 2022</p>
+                                <p class="events_item_time">7:30 pm - 9:30 pm</p>
+                                <div class="tooltip events_item_btn_container">
+                                    <button class="events_item_btn">Buy Tickets</button>
+                                    <span class="tooltiptext">
+                                        <h4 id="tt_concert9"><i>Only X days left!</i></h4>
+                                        <p><b>Ticket Prices:</b></p>
+                                        <p>General Admission: $15</p>
+                                        <p>Subscriber: $10</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <div class="clear"></div>
+
+        <footer>
+            <p id="copyright">Copyright © 2020-21 Apple Hill Center for Chamber Music | All rights reserved. </p>
+            <ul>
+                <li>
+                    Mail: PO Box 217, Sullivan, NH 03445
+                </li>
+                <li>
+                    Location: 410 Apple Hill Rd, Nelson, NH 03457
+                </li>
+                <li>
+                    Phone: 603-847-3371
+                </li>
+                <li>
+                    Fax: 603-847-9734
+                </li>
+            </ul>
+
+        </footer>
+
+    </div>
+
+    <script>
+        //window.addEventListener('scroll', filterSearch);
+        document.getElementById("search_btn").addEventListener('click', filterSearch);
+        document.getElementById("reset_btn").addEventListener('click', resetSearch);
+        window.addEventListener('load', setTooltipText);
+    </script>
+
+</body>
+
+</html>

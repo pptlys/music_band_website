@@ -1,0 +1,174 @@
+/*
+   Web Development Final Assignment
+   
+   Groupe
+
+   Filename: events.css
+
+   Date: April 7, 2022
+*/
+
+#content-container {
+   width: 940px;
+   background: purple;
+}
+
+#events_div_main {
+    display: flex;
+    flex-direction: row;
+    background-color: orange;
+    height: 100%;
+}
+
+
+#section1 {
+    float: left;
+    border: 2px solid red;
+    width: 28%;
+    padding: 0 5px;
+}
+
+#upcoming_events_list {
+    background: cyan;
+    width: 72%;
+    overflow: auto;
+}
+
+.events_item {
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    margin: 15px 5px;
+}
+
+.events_item:hover {
+    background-color: blueviolet;
+}
+
+.events_item_left, .events_item_middle, .events_item_right {
+    padding: 5px;
+}
+
+.events_item_left {
+    border: 4px solid pink;
+    width: 25%;
+}
+
+.events_item_middle {
+    border: 4px solid salmon;
+    width: 45%;
+}
+
+.events_item_right {
+    border: 4px solid green;
+    width: 30%;
+    position: relative;
+}
+
+.events_item_img {
+    height: 100px;
+    width: 150px;
+}
+
+.center {
+    text-align: center;
+    align-items: center;
+}
+
+.events_item_date, .events_item_time {
+    font-weight: bold;
+}
+
+.events_item_date {
+    font-size: 20px;
+    line-height: 25px;
+
+}
+
+.events_item_time {
+    font-size: 18px;
+}
+
+/* .events_item_btn {
+    position: absolute;
+    bottom: 10px;
+    left: 30%;
+} */
+
+.events_item_btn_container {
+    position: absolute;
+    bottom: 10px;
+    left: 30%;
+}
+
+#upcoming_events_header, #upcoming_events_text {
+    padding-left: 5px;
+}
+
+#upcoming_events_header {
+    line-height: 25px;
+}
+
+#upcoming_events_text {
+    display: none;
+}
+
+#buttons_div {
+    text-align: center;
+}
+
+#search_btn, #reset_btn {
+    padding: 10px;
+}
+
+.new_filter_row {
+    padding-bottom: 20px;
+}
+
+
+/* Tooltip container */
+.tooltip {
+    /*position: relative;*/
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 280px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+
+   /* top: -5px;
+    right: 105%;*/
+
+  bottom: 100%;
+  right: 100%;
+  margin-right: 5px;
+}
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .tooltiptext p {
+      margin-top:8px;
+      margin-bottom:8px;
+  }
+
+  .tooltip h4 {
+      font-weight: normal;
+      font-style: italic;
+      margin-top: 5px;
+      margin-bottom: 12px;
+  }
