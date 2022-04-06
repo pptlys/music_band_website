@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--
+      Web Development Final Assignment
+      
+      Landing Page
+
+      Author: Zhaojie YANG
+      Date:   March 24, 2022
+
+      Filename:   index.html
+
+   -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picture Gallery</title>
+    <link rel="stylesheet" type="text/css" href="../styles/home_page.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/gallery.css" />
+    <script src="../scripts/gallery.js" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div id="banner-content">
+          <div id="logo">
+            <a href="/"
+              ><img
+                id="banner-logo"
+                src="images/banner_logo.png"
+                alt="Apple Hill Center Logo"
+            /></a>
+            <button id="lang-toggle" lang="fr" onclick="lang_toggle()">
+              Français
+            </button>
+          </div>
+          <div class="clear"></div>
+          <div id="tag-line">
+            Apple Hill exists to perform, teach, and broaden the appreciation of
+            chamber music
+          </div>
+          <div class="clear"></div>
+        </div>
+        <nav id="nav-container">
+          <div id="tabs-container">
+            <ul>
+              <li>
+                <a href="/index.html" style="border-left: none"
+                  ><img id="home-icon" src="../images/icon-home.png" alt="Home"
+                /></a>
+              </li>
+              <li>
+                <a href="/pages/gallery_en.html">gallery</a>
+              </li>
+              <li>
+                <a href="/pages/events_en.html">events</a>
+              </li>
+              <li>
+                <a href="/pages/donation_en.html">donations</a>
+              </li>
+              <li>
+                <a href="#">about us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <div id="content-container">
+          <!-- Copy you code here -->
+
+          <input type="radio" id="all" name="button" checked />
+          <input type="radio" id="residence" name="button" />
+          <input type="radio" id="workshop" name="button" />
+          <input type="radio" id="ontour" name="button" />
+
+          <h1>Picture Gallery</h1>
+
+          <label class="tag all" for="all" href="residence.html">All</label>
+          <label class="tag tag1" for="residence" href="residence.html"
+            >Residence</label
+          >
+          <label class="tag tag2" for="workshop" href="workshop.html"
+            >Workshop</label
+          >
+          <label class="tag tag3" for="ontour" href="ontour.html"
+            >On tour</label
+          >
+          <br />
+
+          <hr />
+          <br />
+
+          <div class="container photo-gallery">
+            <div class="gallery-container width-4 height-2 pic residence">
+              <div class="picture">
+                <div class="image">
+                  <img
+                    class="residence"
+                    src="../images/AHSQ-fall-2020-road-suits-pc-Will-Matczynski.jpeg"
+                    alt="Quartet on the road"
+                  />
+                </div>
+                <div class="comment">The String Quartet</div>
+              </div>
+            </div>
+
+            <div class="gallery-container width-2 pic residence">
+              <div class="picture">
+                <div class="image">
+                  <img
+                    class="residence"
+                    src="../images/Traces-Philly-concert-2.jpeg"
+                    alt="Philly's concert"
+                  />
+                </div>
+                <div class="comment">Philly's concert</div>
+              </div>
+            </div>
+
+            <div class="gallery-container height-2 pic workshop">
+              <div class="picture">
+                <div class="image">
+                  <img
+                    class="ontour"
+                    src="../images/george-playing-with-quartet1.jpeg"
+                    alt="images/george-playing-with-quartet1.jpeg"
+                  />
+                </div>
+                <div class="comment">George playing with the quartet</div>
+              </div>
+            </div>
+
+            <div class="gallery-container width-1 height-3 pic workshop">
+              <div class="picture">
+                <div class="image">
+                  <img
+                    src="../images/Rupert-Philly-concert-1.jpeg"
+                    alt="Rupert-Philly-concert-1"
+                  />
+                </div>
+                <div class="comment">Rupert playing</div>
+              </div>
+            </div>
+
+            <div class="gallery-container width-4 pic ontour">
+              <div class="picture">
+                <div class="image">
+                  <img
+                    src="../images/AHSQ-Lakefalls-Lodge-9.26.21-1-scaled.jpg"
+                    alt="The Quartet at lakefalls Lodge"
+                  />
+                </div>
+                <div class="comment">The Quartet at Lakefalls Lodge</div>
+              </div>
+            </div>
+
+            <div class="gallery-container width-5 height-2 pic ontour">
+              <div class="picture">
+                <div class="image">
+                  <img
+                    src="../images/AHSQ-Nina-Lee-Jesse-Holstein-July-2021.jpeg"
+                    alt="The Quartet with Nina Lee and Jesse Holstein"
+                  />
+                </div>
+                <div class="comment">
+                  The Quartet with Nina Lee and Jesse Holstein
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery-container height-2 pic ontour">
+              <div class="picture">
+                <div class="image">
+                  <img
+                    src="../images/AHSQ-Philly-concert.jpeg"
+                    alt="Philly's concert"
+                  />
+                </div>
+                <div class="comment">Philly's concert</div>
+              </div>
+            </div>
+
+            <div class="gallery-container width-4 height-2 pic ontour">
+              <div class="picture">
+                <div class="image">
+                  <img src="../images/violin1.jpeg" alt="players" />
+                </div>
+                <div class="comment">Rupert and Mike playing together</div>
+              </div>
+            </div>
+
+            <div class="gallery-container pic ontour">
+              <div class="picture">
+                <div class="image">
+                  <img
+                    class="ontour"
+                    src="../images/Colleen-Philly-concert.jpeg"
+                    alt="Collen at Philly's concert"
+                  />
+                </div>
+                <div class="comment">Colleen at Philly's concert</div>
+              </div>
+            </div>
+
+            <div class="gallery-container width-4 height-3 pic workshop">
+              <div class="picture">
+                <div class="image">
+                  <img
+                    class="workshop"
+                    src="../images/Spring-2021-Apple-Hill-String-Quartet-and-Kinan-Azmeh.jpeg"
+                    alt="The Quartet with Kinan Azmeh"
+                  />
+                </div>
+                <div class="comment">The Quartet with Kinan Azmeh</div>
+              </div>
+            </div>
+
+            <div class="gallery-container width-2 height-4 pic workshop">
+              <div class="picture">
+                <div class="image">
+                  <img
+                    class="workshop"
+                    src="../images/Apple-Hill-47-of-64.jpeg"
+                    alt="Students at Apple Hill"
+                  />
+                </div>
+                <div class="comment">Students at Apple Hill</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="clear"></div>
+
+      <footer>
+        <p id="copyright">
+          Copyright © 2020-21 Apple Hill Center for Chamber Music | All rights
+          reserved.
+        </p>
+        <ul>
+          <li>Mail: PO Box 217, Sullivan, NH 03445</li>
+          <li>Location: 410 Apple Hill Rd, Nelson, NH 03457</li>
+          <li>Phone: 603-847-3371</li>
+          <li>Fax: 603-847-9734</li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
