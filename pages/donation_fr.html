@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <!--
+      Web Development Final Assignment
+      
+      Donation page (english version)
+
+      Author: Xavier Ah-hee
+      Date:   April 7, 2022
+
+      Filename:   donation_en.html
+
+   -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Band Website</title>
+    <link rel="stylesheet" type="text/css" href="../styles/home_page.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/donation.css" />
+    <script src="../scripts/donation.js" defer></script>
+  </head>
+
+  <body onload="loadCache()">
+    <div id="container">
+      <header>
+        <div id="banner-content">
+          <div id="logo">
+            <a href="/"
+              ><img
+                id="banner-logo"
+                src="../images/banner_logo.png"
+                alt="Apple Hill Center Logo"
+            /></a>
+            <button id="lang-toggle" lang="en" onclick="lang_toggle()">
+              english
+            </button>
+          </div>
+          <div class="clear"></div>
+          <div id="tag-line">
+            Apple Hill existe pour jouer, enseigner et élargir l'appréciation de
+            musique de chambre
+          </div>
+          <div class="clear"></div>
+        </div>
+        <nav id="nav-container">
+          <div id="tabs-container">
+            <ul>
+              <li>
+                <a href="/" style="border-left: none"
+                  ><img id="home-icon" src="../images/icon-home.png" alt="Home"
+                /></a>
+              </li>
+              <li>
+                <a href="#">gallery</a>
+              </li>
+              <li>
+                <a href="#">events</a>
+              </li>
+              <li>
+                <a href="#">donations</a>
+              </li>
+              <li>
+                <a href="#">about us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div id="content-container">
+          <h1>Contributions</h1>
+          <div id="donation-text">
+            Les contributions à Apple Hill soutiennent nos programmes
+            d'enseignement de musique. Votre générosité permet à Apple Hill de
+            maintenir son excellent encadrement musical, fournir une aide
+            financier aux étudiants nationaux et internationaux et présentent
+            des concerts de classe mondiale ici et dans le monde entier.
+          </div>
+          <form id="donation">
+            <fieldset id="information">
+              <legend>Information</legend>
+              <label for="firstname">Prénom</label>
+              <input
+                name="firstname"
+                id="firstname"
+                type="text"
+                required="required"
+              />
+              <label for="lastname">Nom</label>
+              <input
+                name="lastname"
+                id="lastname"
+                type="text"
+                required="required"
+              />
+              <label for="streetaddress">Addresse</label>
+              <input
+                name="streetaddress"
+                id="streetaddress"
+                type="text"
+                required="required"
+              />
+              <label for="streetaddress2">Addresse (2)</label>
+              <input name="streetaddress2" id="streetaddress2" type="text" />
+              <label for="city"> Ville</label>
+              <input name="city" id="city" type="text" required="required" />
+              <label for="state">Province / Région</label>
+              <input name="state" id="state" type="text" required="required" />
+              <label for="zipcode">Code Postal</label>
+              <input
+                name="zipcode"
+                id="zipcode"
+                type="text"
+                required="required"
+              />
+              <label for="country">Pays</label>
+              <input
+                name="country"
+                id="country"
+                type="text"
+                value="Canada"
+                required="required"
+              />
+              <label for="phone">Téléphone</label>
+              <input name="phone" id="phone" type="tel" required="required" />
+            </fieldset>
+            <fieldset id="creditcard">
+              <legend>Carte de Crédit</legend>
+              <fieldset id="cardtype">
+                <label class="cardlabel">
+                  <input type="radio" name="card" /><img
+                    src="../images/Mastercard.png"
+                    alt="MasterCard"
+                  />
+                </label>
+                <label class="cardlabel">
+                  <input type="radio" name="card" /><img
+                    src="../images/Visa.png"
+                    alt="Visa"
+                  />
+                </label>
+                <label class="cardlabel">
+                  <input type="radio" name="card" /><img
+                    src="../images/Amex.png"
+                    alt="American Express"
+                  />
+                </label>
+                <label class="cardlabel">
+                  <input type="radio" name="card" /><img
+                    src="../images/Discover.png"
+                    alt="Discover"
+                  />
+                </label>
+                <label class="cardlabel">
+                  <input type="radio" name="card" /><img
+                    src="../images/JCB.png"
+                    alt="JCB"
+                  />
+                </label>
+                <label class="cardlabel">
+                  <input type="radio" name="card" /><img
+                    src="../images/UnionPay.png"
+                    alt="UnionPay"
+                  />
+                </label>
+              </fieldset>
+              <label for="cardnumber">Numéro de carte de crédit</label
+              ><input name="cardnumber" id="cardnumber" required="required" />
+              <label>Date d'expiration</label>
+              <select id="month">
+                <option value="--Month--">Mois</option>
+                <option value="01">janvier</option>
+                <option value="02">février</option>
+                <option value="03">mars</option>
+                <option value="04">avril</option>
+                <option value="05">mai</option>
+                <option value="06">juin</option>
+                <option value="07">juileet</option>
+                <option value="08">aout</option>
+                <option value="09">september</option>
+                <option value="10">octobre</option>
+                <option value="11">novembre</option>
+                <option value="12">décembre</option>
+              </select>
+              <select id="year">
+                <option value="--Year--">Année</option>
+                <option value="22">2022</option>
+                <option value="23">2023</option>
+                <option value="24">2024</option>
+                <option value="25">2025</option>
+                <option value="26">2026</option>
+              </select>
+              <label for="csc">CSC</label>
+              <input id="csc" placeholder="nnn" required="required" />
+            </fieldset>
+            <fieldset id="debitcard">
+              <legend>Carte de Débit</legend>
+              <fieldset id="cardtype">
+                <label class="cardlabel">
+                  <input type="radio" name="card" /><img
+                    src="../images/Interac.png"
+                    alt="Interac"
+                  />
+                </label>
+                <label class="cardlabel">
+                  <input type="radio" name="card" /><img
+                    src="../images/Cirrus.png"
+                    alt="Cirrus"
+                  />
+                </label>
+              </fieldset>
+            </fieldset>
+            <fieldset id="digitalwallet">
+              <legend>Portefeuille Digital</legend>
+              <fieldset id="digitaltype">
+                <label class="digitallabel">
+                  <input type="radio" name="digital" /><img
+                    src="../images/ApplePay.png"
+                    alt="Interac"
+                  />
+                </label>
+                <label class="digitallabel">
+                  <input type="radio" name="digital" /><img
+                    src="../images/GooglePay.png"
+                    alt="Cirrus"
+                  />
+                </label>
+              </fieldset>
+            </fieldset>
+            <a class="button1 button-primary" href="thankyou_fr.html"
+              >Soumettre</a
+            >
+          </form>
+        </div>
+      </main>
+      <div class="clear"></div>
+
+      <footer>
+        <p id="copyright">
+          Copyright © 2020-21 Apple Hill Center for Chamber Music | Tous droits
+          réservés.
+        </p>
+        <ul>
+          <li>Correspondance: BP 217, Sullivan, NH 03445</li>
+          <li>Adresse: 410 rue Apple Hill, Nelson, NH 03457</li>
+          <li>Téléphone: 603-847-3371</li>
+          <li>Fax: 603-847-9734</li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
