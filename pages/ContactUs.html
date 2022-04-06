@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
+  <!--
       Web Development Final Assignment
       Contact us page
 
@@ -9,194 +9,240 @@
       Filename:   ContactUs.html
    -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Contact us. we'd love to hear from you! Contact us with any questions
-  or feedback. music questions? Check out our music band"/>
-  <title>Music Band Website</title>
-  <link rel="stylesheet" type="text/css" href="../styles/ContactUs.css" />
-  <script src="../scripts/main.js" defer></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact us. we'd love to hear from you! Contact us with any questions
+  or feedback. music questions? Check out our music band"
+    />
+    <title>Music Band Website</title>
+    <link rel="stylesheet" type="text/css" href="../styles/ContactUs.css" />
+    <script src="../scripts/contact.js" defer></script>
+  </head>
 
-<body onload="rotate_banner()">
-  <div id="container">
-    <header>
-      <div id="banner-content">
-        <div id="logo">
-          <a href="/"><img id="banner-logo" src="../images/banner_logo.png" alt="Apple Hill Center Logo" /></a>
-          <button id="lang-toggle" lang="fr" onclick="lang_toggle()">
-            Français
-          </button>
+  <body onload="rotate_banner()">
+    <div id="container">
+      <header>
+        <div id="banner-content">
+          <div id="logo">
+            <a href="/"
+              ><img
+                id="banner-logo"
+                src="../images/banner_logo.png"
+                alt="Apple Hill Center Logo"
+            /></a>
+            <button id="lang-toggle" lang="fr" onclick="lang_toggle()">
+              Français
+            </button>
+          </div>
+          <div class="clear"></div>
+          <div id="tag-line">
+            Apple Hill exists to perform, teach, and broaden the appreciation of
+            chamber music
+          </div>
+          <div class="clear"></div>
         </div>
-        <div class="clear"></div>
-        <div id="tag-line">
-          Apple Hill exists to perform, teach, and broaden the appreciation of
-          chamber music
-        </div>
-        <div class="clear"></div>
+        <nav id="nav-container">
+          <div id="tabs-container">
+            <ul>
+              <li>
+                <a href="/" style="border-left: none"
+                  ><img id="home-icon" src="../images/icon-home.png" alt="Home"
+                /></a>
+              </li>
+              <li>
+                <a href="#">gallery</a>
+              </li>
+              <li>
+                <a href="/pages/events_en.html"></a>
+              </li>
+              <li>
+                <a href="/pages/donation_en.html">donations</a>
+              </li>
+              <li>
+                <a href="/pages/ContactUs.html">contact us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <div id="contactus">
+        <h2>Contact Us</h2>
       </div>
-      <nav id="nav-container">
-        <div id="tabs-container">
-          <ul>
-            <li>
-              <a href="/" style="border-left: none"><img id="home-icon" src="../images/icon-home.png" alt="Home" /></a>
-            </li>
-            <li>
-              <a href="gallery_en.html">gallery</a>
-            </li>
-            <li>
-              <a href="events_en.html">events</a>
-            </li>
-            <li>
-              <a href="donation_en.html">donations</a>
-            </li>
-            <li>
-              <a href="contactus.html">contact us</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
 
-    <div id="contactus">
-      <h2>Contact Us</h2>
+      <main id="content-container">
+        <article>
+          <img src="../images/contactus1.jpg" alt="sample photo" />
+          <div class="text">
+            <p>
+              There are many ways to stay in touch with Apple Hill. Here are
+              just a few:
+            </p>
+            <a
+              id=""
+              href="/pages/events_en.html"
+              title="Check our concert schedules in events"
+            >
+              <button class="button">Concert Schedules</button>
+            </a>
+            <p></p>
+
+            <a
+              id=""
+              href="https://www.youtube.com/playlist?list=PL4uJY3JmsexBKj0-GYzfQUan2scZxhu0x"
+              title="Listen to the Quartet on youtube"
+            >
+              <button class="button">Listen to the Quartet</button></a
+            >
+            <p></p>
+
+            <a
+              id=""
+              href="https://www.youtube.com/user/AppleHillCenter"
+              target="_blank"
+              title="Apple Hill on YouTube"
+            >
+              <button class="button">Apple Hill on YouTube</button></a
+            >
+            <p></p>
+
+            <a
+              id=""
+              href="https://www.youtube.com/watch?v=L8yQzYOB--o&list=PL4uJY3JmsexBKj0-GYzfQUan2scZxhu0x&index=6"
+              target="_blank"
+              title="Playing for peace on YouTube"
+            >
+              <button class="button">Playing for Peace</button></a
+            >
+            <p></p>
+
+            <a
+              id=""
+              href="https://www.youtube.com/watch?v=SUnTNN27Oa0"
+              target="_blank"
+              title="Join our Summer Chamber Music Workshop "
+            >
+              <button class="button">Summer Music Workshop</button></a
+            >
+            <p></p>
+
+            <a
+              id=""
+              href="https://www.youtube.com/shorts/ZimwITpMJp0"
+              title="Testimonies"
+              ><button class="button">Educational Philosophy</button></a
+            >
+            <p></p>
+          </div>
+        </article>
+
+        <article>
+          <img src="../images/contactus2.jpg" alt="sample photo" />
+          <div class="text">
+            <h3>Phone/Fax</h3>
+            <p>
+              Tel: 603-847-3371<br />
+              Fax: 603-847-9734
+            </p>
+            <h3>Mailing address</h3>
+            <p>
+              P.O. Box 217<br />
+              Sullivan, NH 03445
+            </p>
+            <h3>Location (shipping address)</h3>
+            <p>
+              410 Apple Hill Road<br />
+              Nelson, NH 03457
+            </p>
+            <h3>Updates</h3>
+            <p>
+              <a href="mailto:info@applehill.org">To sign up for updates,</a
+              ><br />
+              <a href="mailto:info@applehill.org">click here</a><br />
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <img src="../images/contactus3.jpg" alt="sample photo" />
+          <div class="text">
+            <h3>Director</h3>
+            <p>
+              Javier Caballero<br />
+              <a href="mailto:javier@applehill.org">javier@applehill.org</a>
+            </p>
+            <h3>Staff</h3>
+            <p>
+              Richard Anderson<br />
+              <em>Facilities Manager</em><br />
+              <a href="mailto:richard@applehill.org">richard@applehill.org</a>
+            </p>
+            <p>
+              Keegan Brosseau<br />
+              <em>Facilities Assistant</em>
+            </p>
+            <p>
+              Gail Malitas<br />
+              <em>Office Administrator</em><br />
+              <a href="mailto:gail@applehill.org">gail@applehill.org</a>
+            </p>
+            <p>
+              Lenny Matczynski<br />
+              Director Emeritus<br />
+              <a href="mailto:lenny@applehill.org">lenny@applehill.org</a>
+            </p>
+            <p>
+              Amelia Perron<br />
+              <em>Summer Workshop Administrator</em><br />
+              <a href="mailto:amelia@applehill.org">amelia@applehill.org</a>
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <img src="../images/contactus4.jpg" alt="sample photo" />
+          <div class="text">
+            <h3>Apple Hill String Quartet</h3>
+            <p>
+              Elise Kuder, <em>violin</em><br />
+              <a href="mailto:elise@applehill.org">elise@applehill.org</a>
+            </p>
+            <p>
+              Jesse MacDonald, <em>violin</em><br />
+              <a href="mailto:jesse@applehill.org">jesse@applehill.org</a>
+            </p>
+            <p>
+              Michael Kelley, <em>viola</em><br />
+              <a href="mailto:mike@applehill.org">mike@applehill.org</a>
+            </p>
+            <p>
+              Rupert Thompson, <em>cello<br /> </em
+              ><a href="mailto:rupert@applehill.org">rupert@applehill.org</a
+              ><br />
+            </p>
+          </div>
+        </article>
+
+        <!--    </div> -->
+      </main>
+      <div class="clear"></div>
+
+      <footer>
+        <p id="copyright">
+          Copyright © 2020-21 Apple Hill Center for Chamber Music | All rights
+          reserved.
+        </p>
+        <ul>
+          <li>Mail: PO Box 217, Sullivan, NH 03445</li>
+          <li>Location: 410 Apple Hill Rd, Nelson, NH 03457</li>
+          <li>Phone: 603-847-3371</li>
+          <li>Fax: 603-847-9734</li>
+        </ul>
+      </footer>
     </div>
-
-
-    <main id="content-container">
-    
-
-
-      <article>
-
-        <img src="../images/contactus1.jpg" alt="sample photo">
-        <div class="text">
-
-          <p>There are many ways to stay in touch with Apple Hill. Here are just a few:</p>
-          <a id="" href="events_en.html" 
-            title="Check our concert schedules in events">
-            <button class="button">Concert Schedules</button> </a><p></p>
-          
-          
-          <a id="" href="https://www.youtube.com/playlist?list=PL4uJY3JmsexBKj0-GYzfQUan2scZxhu0x"
-            title="Listen to the Quartet on youtube">
-            <button class="button">Listen to the Quartet</button></a>
-          <p> </p>
-
-          <a id="" href="https://www.youtube.com/user/AppleHillCenter" target="_blank" title="Apple Hill on YouTube">
-            <button class="button">Apple Hill on YouTube</button></a><p></p>
-          
-
-
-          <a id="" href="https://www.youtube.com/watch?v=L8yQzYOB--o&list=PL4uJY3JmsexBKj0-GYzfQUan2scZxhu0x&index=6" target="_blank" title="Playing for peace on YouTube">
-            <button class="button">Playing for Peace</button></a><p> </p>
-          
-          <a id="" href="https://www.youtube.com/watch?v=SUnTNN27Oa0" target="_blank" 
-          title="Join our Summer Chamber Music Workshop ">
-          <button class="button">Summer Music Workshop</button></a><p> </p>
-          
-
-          <a id="" href="https://www.youtube.com/shorts/ZimwITpMJp0"
-            title="Testimonies"
-           ><button class="button">Educational Philosophy</button></a> <p> </p>
-            
-
-          
-        </div>
-      </article>
-
-      <article>
-        <img src="../images/contactus2.jpg" alt="sample photo">
-        <div class="text">
-          <h3>Phone/Fax</h3>
-          <p>Tel: 603-847-3371<br />
-            Fax: 603-847-9734</p>
-          <h3>Mailing address</h3>
-          <p>P.O. Box 217<br />
-            Sullivan, NH 03445</p>
-          <h3>Location (shipping address)</h3>
-          <p>410 Apple Hill Road<br />
-            Nelson, NH 03457</p>
-          <h3>Updates</h3>
-          <p><a href="mailto:info@applehill.org">To sign up for updates,</a><br />
-            <a href="mailto:info@applehill.org">click here</a><br />
-       
-        </div>
-      </article>
-
-
-
-
-
-      <article>
-        <img src="../images/contactus3.jpg" alt="sample photo">
-        <div class="text">
-          <h3>Director</h3>
-          <p>Javier Caballero<br />
-            <a href="mailto:javier@applehill.org">javier@applehill.org</a>
-          </p>
-          <h3>Staff</h3>
-          <p>Richard Anderson<br />
-            <em>Facilities Manager</em><br />
-            <a href="mailto:richard@applehill.org">richard@applehill.org</a>
-          </p>
-          <p>Keegan Brosseau<br />
-            <em>Facilities Assistant</em>
-          </p>
-          <p>Gail Malitas<br />
-            <em>Office Administrator</em><br />
-            <a href="mailto:gail@applehill.org">gail@applehill.org</a>
-          </p>
-          <p>Lenny Matczynski<br />
-            Director Emeritus<br />
-            <a href="mailto:lenny@applehill.org">lenny@applehill.org</a>
-          </p>
-          <p>Amelia Perron<br />
-            <em>Summer Workshop Administrator</em><br />
-            <a href="mailto:amelia@applehill.org">amelia@applehill.org</a>
-          </p>
-        </div>
-      </article>
-
-      <article>
-        <img src="../images/contactus4.jpg" alt="sample photo">
-        <div class="text">
-          <h3>Apple Hill String Quartet</h3>
-          <p>Elise Kuder, <em>violin</em><br />
-            <a href="mailto:elise@applehill.org">elise@applehill.org</a>
-          </p>
-          <p>Jesse MacDonald, <em>violin</em><br />
-            <a href="mailto:jesse@applehill.org">jesse@applehill.org</a>
-          </p>
-          <p>Michael Kelley, <em>viola</em><br />
-            <a href="mailto:mike@applehill.org">mike@applehill.org</a>
-          </p>
-          <p>Rupert Thompson, <em>cello<br />
-            </em><a href="mailto:rupert@applehill.org">rupert@applehill.org</a><br />
-        </div>
-      </article>
-
-
-      <!--    </div> -->
-    </main>
-    <div class="clear"></div>
-
-
-    <footer>
-      <p id="copyright">
-        Copyright © 2020-21 Apple Hill Center for Chamber Music | All rights
-        reserved.
-      </p>
-      <ul>
-        <li>Mail: PO Box 217, Sullivan, NH 03445</li>
-        <li>Location: 410 Apple Hill Rd, Nelson, NH 03457</li>
-        <li>Phone: 603-847-3371</li>
-        <li>Fax: 603-847-9734</li>
-      </ul>
-    </footer>
-  </div>
-</body>
-
+  </body>
 </html>

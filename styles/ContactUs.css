@@ -27,6 +27,7 @@ body {
 #container {
   width: 960px;
   margin: 0 auto;
+  background-color: #FCF0C8;
 }
 
 header {
@@ -119,7 +120,7 @@ main {
 }
 */
 main {
-  background: white;
+  background-color: #FCF0C8;
   display: grid;/*block;*/
   border: black 0px solid;
   border-bottom: none;

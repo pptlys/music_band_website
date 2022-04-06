@@ -111,7 +111,7 @@ header {
 }
 
 main {
-  background: #FCF0C8;
+  background-color: #FCF0C8;
   display: block;
   border: black 1px solid;
   border-bottom: none;
