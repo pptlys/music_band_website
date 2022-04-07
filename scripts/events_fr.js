@@ -3,7 +3,7 @@
    
    Groupe
 
-   Filename: events.js
+   Filename: events_fr.js
 
    Date: April 7, 2022
 */
@@ -18,14 +18,6 @@ function filterSearch() {
     //retrieve upcoming events header and description
     let upcomingEventsHeader = document.getElementById("upcoming_events_header");
     let upcomingEventsText = document.getElementById("upcoming_events_text");
-
-    //set initial display
-    /*upcomingEventsHeader.innerText = "All upcoming events";
-    upcomingEventsText.style.display = "none";
-
-    for (const element of document.getElementsByClassName("events_item")) {
-        element.style.display = "flex";
-    }*/
 
     //retrieve selected indices of filters
     let seriesFilter = document.getElementById("series_filter");
@@ -43,7 +35,7 @@ function filterSearch() {
         (seriesFilterIndex != 0 && seasonFilterIndex === 0 && monthFilterIndex === 0) ||
         (seriesFilterIndex === 0 && seasonFilterIndex != 0 && monthFilterIndex === 0) ||
         (seriesFilterIndex === 0 && seasonFilterIndex === 0 && monthFilterIndex != 0))) {
-        alert("Please select only one search filter");
+        alert("Veuillez choisir une (1) seule critère");
 
         //don't run the rest of the code
         return;
@@ -52,7 +44,7 @@ function filterSearch() {
     //if all filters are on default settings, leave display as is
     if ((seriesFilterIndex === 0 && seasonFilterIndex === 0 && monthFilterIndex === 0)) {
 
-        upcomingEventsHeader.innerText = "All upcoming events";
+        upcomingEventsHeader.innerText = "Tous les événements à venir";
         upcomingEventsText.style.display = "none";
 
         for (const element of document.getElementsByClassName("events_item")) {
@@ -74,17 +66,17 @@ function filterSearch() {
 
         let selectedSeries = seriesFilter.options[seriesFilterIndex].value;
 
-        upcomingEventsHeader.innerHTML = "All upcoming events for: '" + selectedSeries + "'";
+        upcomingEventsHeader.innerHTML = "Événements à venir: '" + selectedSeries + "'";
 
         //Valley Classics
-        if (selectedSeries === "Valley Classics Concert Series") {
+        if (selectedSeries === "Les classiques de la vallée") {
             for (const element of document.getElementsByClassName("valley_classics")) {
                 element.style.display = "flex";
             }
         }
 
         //Tuesday Summer Concerts
-        else if (selectedSeries === "Tuesday Summer Concert Series") {
+        else if (selectedSeries === "Les mardis soir chez Apple Hill") {
             for (const element of document.getElementsByClassName("tuesday_summer_concerts")) {
                 element.style.display = "flex";
             }
@@ -96,19 +88,19 @@ function filterSearch() {
         
         let selectedSeason = seasonFilter.options[seasonFilterIndex].value;
 
-        upcomingEventsHeader.innerHTML = "All upcoming events for: '" + selectedSeason + "'";
+        upcomingEventsHeader.innerHTML = "Événements à venir: '" + selectedSeason + "'";
 
         upcomingEventsText.style.display = "none";
 
         //Spring
-        if (selectedSeason === "Spring") {
+        if (selectedSeason === "printemps") {
             for (const element of document.getElementsByClassName("spring")) {
                 element.style.display = "flex";
             }
         }
 
         //Summer
-        else if (selectedSeason === "Summer") {
+        else if (selectedSeason === "été") {
             for (const element of document.getElementsByClassName("summer")) {
                 element.style.display = "flex";
             }
@@ -116,10 +108,10 @@ function filterSearch() {
 
         //Fall or Winter (no concerts available for now)
         else {
-            upcomingEventsHeader.innerHTML = "No upcoming events for: '" + selectedSeason + "'";
+            upcomingEventsHeader.innerHTML = "Aucun résultat ne correspond au critère: '" + selectedSeason + "'";
 
             upcomingEventsText.style.display = "block";
-            upcomingEventsText.innerText = "Stay tuned for updates to our upcoming events!";
+            upcomingEventsText.innerText = "Restez à l'écoute de nos prochains événements!";
         }
     }
 
@@ -127,18 +119,18 @@ function filterSearch() {
     else if (monthFilterIndex != 0) {
         let selectedMonth = monthFilter.options[monthFilterIndex].value;
 
-        upcomingEventsHeader.innerHTML = "All upcoming events for: '" + selectedMonth + "'";
+        upcomingEventsHeader.innerHTML = "Événements à venir: '" + selectedMonth + "'";
         upcomingEventsText.style.display = "none";
 
         //April
-        if (selectedMonth === "April") {
+        if (selectedMonth === "avril") {
             for (const element of document.getElementsByClassName("april")) {
                 element.style.display = "flex";
             }
         }
 
         //May
-        else if (selectedMonth === "May") {
+        else if (selectedMonth === "mai") {
             for (const element of document.getElementsByClassName("may")) {
                 element.style.display = "flex";
             }
@@ -146,7 +138,7 @@ function filterSearch() {
         }
 
         //June
-        else if (selectedMonth === "June") {
+        else if (selectedMonth === "juin") {
             for (const element of document.getElementsByClassName("june")) {
                 element.style.display = "flex";
             }
@@ -154,7 +146,7 @@ function filterSearch() {
         }
 
         //July
-        else if (selectedMonth === "July") {
+        else if (selectedMonth === "juillet") {
             for (const element of document.getElementsByClassName("july")) {
                 element.style.display = "flex";
             }
@@ -162,7 +154,7 @@ function filterSearch() {
         }
 
         //August
-        else if (selectedMonth === "August") {
+        else if (selectedMonth === "août") {
             for (const element of document.getElementsByClassName("august")) {
                 element.style.display = "flex";
             }
@@ -170,9 +162,9 @@ function filterSearch() {
 
         //other months (no concerts available for now)
         else {
-            upcomingEventsHeader.innerHTML = "No upcoming events for: '" + selectedMonth + "'";
+            upcomingEventsHeader.innerHTML = "Aucun résultat ne correspond au critère: '" + selectedMonth + "'";
             upcomingEventsText.style.display = "block";
-            upcomingEventsText.innerText = "Stay tuned for updated upcoming events or select another month";
+            upcomingEventsText.innerText = "Restez à l'écoute de nos prochains événements!";
         }
     }
 
@@ -185,7 +177,7 @@ function filterSearch() {
 function resetSearch() {
 
     //reset upcoming events header and description
-    document.getElementById("upcoming_events_header").innerText = "All upcoming events";
+    document.getElementById("upcoming_events_header").innerText = "Tous les événements à venir";
     document.getElementById("upcoming_events_text").style.display = "none";
 
     //reset search filter indices to 0 (default)
@@ -228,15 +220,15 @@ function setTooltipText() {
     let daysLeftConcert9 = calculateDaysUntilEvent(concertDate9);
 
     //set the text for each tooltip
-    document.getElementById("tt_concert1").innerText = "Only " + daysLeftConcert1 + " days left until the event!";
-    document.getElementById("tt_concert2").innerText = "Only " + daysLeftConcert2 + " days left until the event!";
-    document.getElementById("tt_concert3").innerText = "Only " + daysLeftConcert3 + " days left until the event!";
-    document.getElementById("tt_concert4").innerText = "Only " + daysLeftConcert4 + " days left until the event!";
-    document.getElementById("tt_concert5").innerText = "Only " + daysLeftConcert5 + " days left until the event!";
-    document.getElementById("tt_concert6").innerText = "Only " + daysLeftConcert6 + " days left until the event!";
-    document.getElementById("tt_concert7").innerText = "Only " + daysLeftConcert7 + " days left until the event!";
-    document.getElementById("tt_concert8").innerText = "Only " + daysLeftConcert8 + " days left until the event!";
-    document.getElementById("tt_concert9").innerText = "Only " + daysLeftConcert9 + " days left until the event!";
+    document.getElementById("tt_concert1").innerText = "Seulement " + daysLeftConcert1 + " jours avant l'événement!";
+    document.getElementById("tt_concert2").innerText = "Seulement " + daysLeftConcert2 + " jours avant l'événement!";
+    document.getElementById("tt_concert3").innerText = "Seulement " + daysLeftConcert3 + " jours avant l'événement!";
+    document.getElementById("tt_concert4").innerText = "Seulement " + daysLeftConcert4 + " jours avant l'événement!";
+    document.getElementById("tt_concert5").innerText = "Seulement " + daysLeftConcert5 + " jours avant l'événement!";
+    document.getElementById("tt_concert6").innerText = "Seulement " + daysLeftConcert6 + " jours avant l'événement!";
+    document.getElementById("tt_concert7").innerText = "Seulement " + daysLeftConcert7 + " jours avant l'événement!";
+    document.getElementById("tt_concert8").innerText = "Seulement " + daysLeftConcert8 + " jours avant l'événement!";
+    document.getElementById("tt_concert9").innerText = "Seulement " + daysLeftConcert9 + " jours avant l'événement!";
 }
 
 
@@ -256,11 +248,12 @@ function calculateDaysUntilEvent(concertDate) {
 }
 
 function lang_toggle(){
+    let lang_toggle = document.getElementById("lang-toggle")
     let current_lang = document.documentElement.lang
     
-    if (current_lang === 'en') {
-        window.open("/index_fr.html", "_self")
+    if (current_lang === 'fr') {
+        window.open("../pages/events_en.html", "_self")
     } else {
-        window.open("/index.html", "_self")
+        window.open("../pages/events_fr.html", "_self")
     }
 }
