@@ -23,7 +23,7 @@ input{
 }
 
 h1{
-  color: #FACE7F;
+  color: #630A10;
 
 }
 
@@ -214,11 +214,15 @@ body{
 /*End of Gallery code */
 
 
+
+
 #content-container{
   width: auto;
   padding-bottom: 5%;
   
 }
+
+/*
 
 #container{
   width:90%;
