@@ -9,6 +9,7 @@
 */
 
 #content-container {
+    margin: 0 auto;
    width: 940px;
    background: #FCF0C8;
 }

@@ -1,9 +1,16 @@
 /* Header and text Styles */
+
+
+
 h1, h2 {
     color: #9e2c49;
     margin: 20px;
 }
 
+#content-container{
+    width: 960px;
+    margin: 0 auto;
+}
 #donation-text {
     margin: 20px;
     font-size: 0.9em;
