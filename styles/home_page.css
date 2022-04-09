@@ -12,12 +12,15 @@
 html {
   margin: 0;
   padding: 0;
+  background-color: #630A10;
 }
 
 body {
   font-family: "open-sans-regular", Arial, Helvetica, sans-serif;
   font-size: 100%;
   line-height: 1em;
+  background-color: #FCF0C8;
+
 }
 
 .clear {
@@ -25,7 +28,6 @@ body {
 }
 
 #container {
-  width: 960px;
   margin: 0 auto;
 }
 
@@ -39,13 +41,15 @@ header {
 }
 
 #banner-content {
-  width: 960px;
+
   margin: 0 auto;
   display: block;
 }
 
 #banner-logo {
-  width: 600px;
+  max-width: 100%;
+  max-height: 5rem;
+
   
 }
 
@@ -55,7 +59,6 @@ header {
   background-color: #9e2c49;
   background-position: left top;
   overflow: hidden;
-  height: 140px;
 }
 
 #tag-line {
@@ -113,18 +116,21 @@ header {
 main {
   background-color: #FCF0C8;
   display: block;
-  border: black 1px solid;
   border-bottom: none;
 }
 
 #content-container {
   margin-bottom: 0;
   padding: 10px 10px 0px 10px;
-  width: 960px;
+
   overflow-y: scroll;
   overflow-x: hidden;
   position: sticky;
-
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+}
+#content-container::-webkit-scrollbar {
+  display: none;
 }
 
 footer {
@@ -136,7 +142,6 @@ footer {
   border-left: black 1px solid;
   border-right: black 1px solid;
   height: 70px;
-  width: 948px;
   font-size: 12px;
   color: white;
 }
@@ -159,8 +164,9 @@ footer ul li {
 }
 
 #video-container {
-  margin-left: 10px;
+  margin: 0 auto;
   display: block;
+  width:fit-content;
 }
 
 #lang-toggle {
