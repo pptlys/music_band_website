@@ -217,8 +217,9 @@ body{
 
 
 #content-container{
-  width: auto;
+  width: 75%;
   padding-bottom: 5%;
+  margin: 0 auto;
   
 }
 
