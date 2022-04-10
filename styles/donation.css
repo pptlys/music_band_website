@@ -1,29 +1,27 @@
 /* Header and text Styles */
-
-
-
-h1, h2 {
+h1,
+h2 {
     color: #9e2c49;
-    margin: 20px;
 }
 
-#content-container{
+#content-container {
     width: 75%;
     margin: 0 auto;
 }
+
 #donation-text {
     margin: 20px;
     font-size: 0.9em;
     float: right;
-    color: #999;
+    color: #630A10;
     letter-spacing: 1px;
 }
 
 #thankyou-text {
-    margin: 20px 20px 80px;
+    margin: 20px 20px 60px;
     font-size: 0.9em;
     float: right;
-    color: #999;
+    color: #630A10;
     letter-spacing: 1px;
 }
 
@@ -33,7 +31,8 @@ fieldset {
     border-color: #9e2c49;
 }
 
-#cardtype,
+#creditcardtype,
+#debitcardtype,
 #digitaltype {
     border: none;
 }
@@ -56,7 +55,7 @@ label {
     margin-right: 10px;
     width: 180px;
     text-align: right;
-    color: #999;
+    color: #630A10;
 }
 
 form#donation input,
@@ -90,6 +89,7 @@ label.digitallabel img {
 }
 
 label.sociallabel img {
+    height: 48px;
     margin: 10px 20px;
 }
 
